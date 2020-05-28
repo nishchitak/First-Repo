@@ -23,7 +23,8 @@ public class TestClass{
 		ArrayList<Employee> employees = reader.readCSVFile("/Users/ashwini/Dropbox/Programs/Data_File.csv");
 		Manager manager = new Manager();
 		ArrayList<Manager> managers = manager.createManagerList(employees);
-		
+		// Is there a better way to loop here? You have a if & a DoWhile. 
+		//Does entering 0 & 9 different lead to different results? 
 		int choice =0;
 		do{
 			choice = newEmployee.displayOptionAndReadUserInput(employees);
